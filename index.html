@@ -258,25 +258,6 @@
     </table>
   </div>
 
-  <script>
-      const table = document.getElementsByTagName("table")[0]
-      const ths = table.querySelectorAll("th");
-      const today = new Date();
-      const month = today.getMonth() + 1;
-      const date = today.getDate();
-
-      console.log(month, date);
-
-      for (let i = 0; i < ths.length; i++) {
-         const th = ths[i];
-
-         thText = th.textContent;
-
-         if (thText.includes(`${month}월 ${date}일`)) {
-            th.style.backgroundColor = 'green'
-         }
-      }
-   </script>
 </body>
 
 
